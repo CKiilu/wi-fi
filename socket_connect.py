@@ -2,9 +2,11 @@
 
 from socket import socket
 
+HOST = socket.gethostname()
+PORT = 1464
 s = socket()
 
-s.connect(('192.168.1.107', 22))
+s.connect((HOST, PORT))
 
 answer = s.recv(1024)
 print answer

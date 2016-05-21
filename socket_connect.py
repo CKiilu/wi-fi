@@ -1,10 +1,10 @@
 #!/usr/bin/python
 
-from socket import socket
+import socket
 
 HOST = socket.gethostname()
 PORT = 1464
-s = socket()
+s = socket.socket()
 
 s.connect((HOST, PORT))
 
